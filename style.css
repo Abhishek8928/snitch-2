@@ -1,0 +1,261 @@
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css");
+body{
+    margin:0px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+html{
+    font-size: 10px;
+}
+body{
+    background: #e8e8e8;
+    /* background-color: #161a28; */
+}
+.form-wrapper{
+    position: relative;
+    display:flex;
+    justify-content: center;
+    /* align-items: center; */
+    padding:60px 0px 0px 0px;
+}
+
+.form-wrapper + i{
+    color:black;
+    font-size: 2.6rem;
+}
+.form-wrapper i{
+    color:black;
+    font-size: 2rem;
+    position: absolute;
+    bottom:0;
+    left:0;
+    margin: 12px;
+}
+header{
+    position: sticky;
+    top: 0;
+    z-index: 999;
+}
+nav{
+    background-color: #FFF;
+    padding:12px 10%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+.col-whi{
+    color: #fff;
+}
+.btn-search{
+    border:none;
+    background-color: #161a28;
+    color:white;
+    padding:1.6rem 4rem;
+    font-size: 1.7rem;
+    border-radius: 0px 4px 4px 0px;
+}
+.input-control{
+    padding:1.6rem 1rem;
+    width:45rem;
+    border-radius: 4px 0px 0px 4px;
+    border:1px solid #ccc;
+    font-size: 1.7rem;
+}
+.input-control:focus{
+    outline:none;
+    border:1px solid blueviolet;
+}
+.card{
+    width:240px;
+    padding:20px;
+    margin: 10px 0px;
+    background-color: #fff;
+}
+.dummy-card{
+    width:240px;
+    height:200px;
+    padding:20px;
+    margin: 80px 0px;
+    background-color: #fff;
+}
+.dummy-img{
+    width:100%;
+    height:100px;
+    background-color: #ccc;
+}
+
+
+.food-title{
+    font-size: 1.6rem;
+    color: #2f2c3e;
+}
+
+
+.mt-0{
+    margin-top: 0px;
+}
+.mb-0{
+    margin-bottom: 0px;
+}
+.food-cui{
+    color: #686b78;
+    font-size: 13px;
+    margin-top: 4px
+}
+.card-img{
+    position: relative;
+}
+.card-img p{
+    position: absolute;
+    background-color:#3b3d41;
+    font-weight: bold;
+    padding:6px 8px;
+    color:white;
+    font-size: 1.2rem;
+}
+
+
+
+.d-flex{
+    display:flex;
+    justify-content: center;
+    gap:2rem;
+    padding:20px 10% 40px 10%;
+    flex-wrap: wrap;
+    /* z-index: -999; */
+}
+
+.offer{
+    color:#c1a79e;
+    font-size: 1.2rem;
+}
+.dummy-offer{
+    background-color: red;
+    font-size: 1.2rem;
+}
+.d-none{
+    display: none;
+}
+
+.car-flex{
+    display:flex;
+    justify-content: center;
+    padding:40px 10%;
+    background-color: #161a28;
+    gap:4rem;
+}
+.footer-wrapper{
+    
+    padding: 10px 10%;
+    background-color:#fff;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.copy{
+    font-size: 2rem;
+}
+.social-handle{
+    display:flex;
+    gap:1rem;
+    list-style-type: none;
+}
+.social-handle li i{
+    color:rgb(20,16,11);
+    font-size: 2.2rem;
+    opacity:0.6;
+}
+.social-handle li i:hover{
+    opacity:1;
+}
+.try-one{
+    position: absolute;
+    background-color:rgb(43, 146, 43) !important;
+    font-weight: bold;
+    padding:4px 8px;
+    color:white;
+    font-size: 1.2rem;
+}
+/* The switch - the box around the slider */
+.switch {
+    --width-of-switch: 3.5em;
+    --height-of-switch: 2em;
+    /* size of sliding icon -- sun and moon */
+    --size-of-icon: 1.4em;
+    /* it is like a inline-padding of switch */
+    --slider-offset: 0.3em;
+    position: relative;
+    width: var(--width-of-switch);
+    height: var(--height-of-switch);
+  }
+  
+  /* Hide default HTML checkbox */
+  .switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+  }
+  
+  /* The slider */
+  .slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #f4f4f5;
+    transition: .4s;
+    border-radius: 30px;
+  }
+  
+  .slider:before {
+    position: absolute;
+    content: "";
+    height: var(--size-of-icon,1.4em);
+    width: var(--size-of-icon,4em);
+    border-radius: 20px;
+    left: var(--slider-offset,3em);
+    top: 50%;
+    transform: translateY(-50%);
+    background: linear-gradient(40deg,#ff0080,#ff8c00 70%);
+    ;
+   transition: .4s;
+  }
+  
+  input:checked + .slider {
+    background-color: #303136;
+  }
+  .card-w{
+    background-color: red;
+    width:400px;
+    height:400px;
+  }
+  input:checked + .slider:before {
+    left: calc(100% - (var(--size-of-icon,1.8em) + var(--slider-offset,0.3em)));
+    background: #303136;
+    /* change the value of second inset in box-shadow to change the angle and direction of the moon  */
+    box-shadow: inset -3px -2px 5px -2px #8983f7, inset -10px -4px 0 0 #a3dafb;
+  }
+
+
+  .msg-no{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .msg-no h1{
+    font-size: 4rem;
+    color:black;
+  }
+@media (max-width:1000px) {
+    
+    .footer-wrapper{
+        padding: 30px 4%;
+    }
+    
+}
+
+

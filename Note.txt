@@ -1,0 +1,98 @@
+to empower our react application we needed a packages who can give the super to y application
+
+todo : by add react to your app it doesnot make the app faster we needed a tons of helper function
+! we have minified your code
+
+If we wanted to install any pacakages . we needed to have package manager with us
+
+package.json contains all the dependinces packages which our file needed
+package-lock.json contains which exact versions we have to install or our project needed
+
+command npm init
+
+command
+dependencies - i needed that packages in prod and developer machine also
+ npm install packages-name   npm i packagename
+
+devdendenccies - i needed that packages in developer machinee
+
+
+to install the parcel npm i -save-dev packkage-name
+
+
+any packages y will installed it files will present in  nodemodules
+
+anything that can regenmerated by own that will put on the gitignore
+
+
+parcel doesnot remove the console.log
+
+we have confiq the babelrc file to clear console
+
+browserlist help us to make our code compactaiable to older version of browser also
+
+
+createElement takes three parameter 
+1. Element
+2. attribute in terms of obj
+3. content of the element
+
+in craeteRoot we have pass the root of your dom
+
+using render method we injected our code to that specific root 
+
+if the code is already present inside the root our react will overide that all code
+
+
+our js doesnot know what is im[port and export. we have tell that it not a noramal js files
+
+it module file to specifies it we have type=module
+
+we can create the shortcut also command
+
+hmr - hot module replacement is the process which uses file wtcher algorithm to tarck our files
+
+polyfill -> a code which is just replecement of new version code
+
+suppose our browser doesnot support array.map then i will create my own array.map whcih will behave same as the array.map
+
+does we have write polyfill no 
+
+babel do it jobs
+
+babel is the transcomplier which takes next generation js code and complied it to browser compactiable code
+
+
+jsx - jqvascript xml
+
+every tag y opend should be closed
+
+jsx is not html inside js
+
+jsx is the html like syntax.
+
+react.createElement => object => html(dom)
+
+jsx => react.createElement => object => html(dom)
+
+
+{} in jsx we have write your jhs experssion within thhe curly braces
+
+
+if we have to write multipline line jsx we have use ()
+jsx expression should contain only one parent
+
+
+everything in react an itself a sepearte component
+
+1. functional component - we use the approcah
+2. class component
+
+functional component nothing but the js function only which return some species of jsx
+this component are reuses in the entire file
+
+the functional component should be always in pascal case the first letter should be capital
+
+one tag is called => jsx element
+
+an expression => conatins of group of jsx element
