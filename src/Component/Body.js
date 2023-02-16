@@ -26,9 +26,9 @@ let Body = () => {
         
         
     }
-    // let onSearchHandler = () => {
-    //     filterData(allRestaurantlist, text);
-    // }
+    let onSearchHandler = () => {
+        filterData(allRestaurantlist, text);
+    }
 
     useEffect(() => {
         fetchTheData();
@@ -58,7 +58,7 @@ let Body = () => {
                     <input type="text" onChange={getTextHandler = (e) => {
                         settext(e.target.value)
                         }} value={text}  className="input-control" placeholder="Once you try it, you will love it." />
-                        {/* <button className="btn-search" onClick={onSearchHandler}>Search</button> */}
+                        <button className="btn-search" onClick={onSearchHandler}>Search</button>
                         {/* <i class="bi bi-search"></i> */}
                     </div>
             </div>

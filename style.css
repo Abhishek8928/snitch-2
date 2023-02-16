@@ -89,6 +89,11 @@ nav{
     font-size: 1.6rem;
     color: #2f2c3e;
 }
+.dummy-title{
+    font-size: 1.6rem;
+    height:40px;
+    background-color: #ccc;
+}
 
 
 .mt-0{
@@ -102,6 +107,12 @@ nav{
     font-size: 13px;
     margin-top: 4px
 }
+/* .dummy-cusi{
+    background-color: #ccc;
+    font-size: 13px;
+    margin-top: 4px;
+    height:20px; */
+/* } */
 .card-img{
     position: relative;
 }
@@ -132,13 +143,33 @@ nav{
     font-size: 1.2rem;
 }
 .dummy-offer{
+    font-size: 1.2rem;
+    background-color: #ccc;
+    height: 30px;
+}
+.dummy-offer{
     background-color: #ccc;
     font-size: 1.2rem;
 }
 .d-none{
     display: none;
 }
-
+.blink-it{
+    animation-name: opa;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+}
+@keyframes opa {
+    0%{
+        opacity:0.4;
+    }
+    50%{
+        opacity: 0.7;
+    }
+    100%{
+        opacity:1
+    }
+}
 .car-flex{
     display:flex;
     justify-content: center;

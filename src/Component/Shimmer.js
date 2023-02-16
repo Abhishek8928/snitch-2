@@ -14,7 +14,7 @@ let Shimmer = () => {
             </div>
             <div className="d-flex">
             {
-                    new Array(1, 2, 3, 4, 5, 6).map((x) => {
+                    new Array(15).fill("").map((x) => {
                         return <ShimmerModal />
                 })
             }
@@ -35,10 +35,17 @@ function ShimmerModal() {
     return (
         <>
                         <div className="dummy-card">
-                            <div className="dummy-img">
+                            <div className="dummy-img blink-it">
                                 <img src="" alt="" />
-                            </div>
-                        </div>
+                </div>
+                <div className="card-body">
+                    <h1 className="dummy-title mb-0 blink-it"></h1>
+                    <p className="dummy-cusi blink-it"></p>
+                </div>
+
+                <hr />
+                <p className="dummy-offer blink-it mb-0"></p>
+                </div>
                     
         </>
     )
