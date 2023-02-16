@@ -17,6 +17,9 @@ let Body = () => {
 
     
 
+    function getTextHandler(e) {
+        settext(e.target.value)
+    } 
     function filterData(allRestaurantlist, searchText) {
         let filterlist = allRestaurantlist.filter((x) => {
             return (x.data.name.toLowerCase().includes(searchText.toLowerCase()));
@@ -48,6 +51,8 @@ let Body = () => {
                </>
             )
     }
+
+
     
     // conditional rendering
     return  (
@@ -55,9 +60,7 @@ let Body = () => {
             <div>
 
             <div className="form-wrapper">
-                    <input type="text" onChange={getTextHandler = (e) => {
-                        settext(e.target.value)
-                        }} value={text}  className="input-control" placeholder="Once you try it, you will love it." />
+                    <input type="text" onChange={getTextHandler}  value={text}  className="input-control" placeholder="Once you try it, you will love it." />
                         <button className="btn-search" onClick={onSearchHandler}>Search</button>
                         {/* <i class="bi bi-search"></i> */}
                     </div>
