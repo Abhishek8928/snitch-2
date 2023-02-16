@@ -1,367 +1,48 @@
-import Resturanatcard from "./Resturanatcard";
-
-
 
 let Shimmer = () => {
-    
+    let a = []
     return (
         <>
-             <div className="d-flex">
-            <div className="dummy-card">
-                <div className="card-img">
-                    
-                    <img className="dummy-img" width="100%"  alt="" />
+            <div>
+                <div className="form-wrapper">
+                    <input type="text"
+                        // setfilteredRestaurantlist(allRestaurantlist)
+                        className="input-control" placeholder="Once you try it, you will love it." />
+                    <button className="btn-search" >Search</button>
+
                 </div>
-                <div className="card-body">
-                    <h1 className="food-title mb-0"></h1>
-                    <p className="food-cui mt-0"></p>
-
-                    <div className="desc">
-                        <div className="rating"></div>
-                    </div>
-
-                    
-
-                    <p className="offer mb-0"></p>
-                </div>
-                </div>
-
-
-
-                <div className="dummy-card">
-                <div className="card-img">
-                
-                    <img className="dummy-img" width="100%"  alt="" />
-                </div>
-                <div className="card-body">
-                    <h1 className="food-title mb-0"></h1>
-                    <p className="food-cui  mt-0"></p>
-
-                    <div className="desc">
-                        <div className="rating"></div>
-                    </div>
-
-                    
-
-                    <p className="offer mb-0"></p>
-                </div>
-                </div>
-
-
-                <div className="dummy-card">
-                <div className="card-img">
-                
-                    <img className="dummy-img" width="100%"  alt="" />
-                </div>
-                <div className="card-body">
-                    <h1 className="food-title mb-0"></h1>
-                    <p className="food-cui mt-0"></p>
-
-                    <div className="desc">
-                        <div className="rating"></div>
-                    </div>
-
-                    
-
-                    <p className="offer mb-0"></p>
-                </div>
-                </div>
-
-
-
-                <div className="dummy-card">
-                <div className="card-img">
-                
-                    <img className="dummy-img" width="100%"  alt="" />
-                </div>
-                <div className="card-body">
-                    <h1 className="food-title mb-0"></h1>
-                    <p className="food-cui mt-0"></p>
-
-                    <div className="desc">
-                        <div className="rating"></div>
-                    </div>
-
-                    
-
-                    <p className="offer mb-0"></p>
-                </div>
-                </div>
-
-
-
-                <div className="dummy-card">
-                <div className="card-img">
-                
-                    <img className="dummy-img" width="100%"  alt="" />
-                </div>
-                <div className="card-body">
-                    <h1 className="food-title mb-0"></h1>
-                    <p className="food-cui mt-0"></p>
-
-                    <div className="desc">
-                        <div className="rating"></div>
-                    </div>
-
-                    
-
-                    <p className="offer mb-0"></p>
-                </div>
-                </div>
-
-
-                <div className="dummy-card">
-                <div className="card-img">
-                
-                    <img className="dummy-img" width="100%"  alt="" />
-                </div>
-                <div className="card-body">
-                    <h1 className="food-title mb-0"></h1>
-                    <p className="food-cui mt-0"></p>
-
-                    <div className="desc">
-                        <div className="rating"></div>
-                    </div>
-
-                    
-
-                    <p className="offer mb-0"></p>
-                </div>
-                </div>
-
-                <div className="dummy-card">
-                <div className="card-img">
-                
-                    <img className="dummy-img" width="100%"  alt="" />
-                </div>
-                <div className="card-body">
-                    <h1 className="food-title mb-0"></h1>
-                    <p className="food-cui mt-0"></p>
-
-                    <div className="desc">
-                        <div className="rating"></div>
-                    </div>
-
-                    
-
-                    <p className="offer mb-0"></p>
-                </div>
-                </div>
-
-                <div className="dummy-card">
-                <div className="card-img">
-                
-                    <img className="dummy-img" width="100%"  alt="" />
-                </div>
-                <div className="card-body">
-                    <h1 className="food-title mb-0"></h1>
-                    <p className="food-cui mt-0"></p>
-
-                    <div className="desc">
-                        <div className="rating"></div>
-                    </div>
-
-                    
-
-                    <p className="offer mb-0"></p>
-                </div>
-                </div>
-
-                <div className="dummy-card">
-                <div className="card-img">
-                
-                    <img className="dummy-img" width="100%"  alt="" />
-                </div>
-                <div className="card-body">
-                    <h1 className="food-title mb-0"></h1>
-                    <p className="food-cui mt-0"></p>
-
-                    <div className="desc">
-                        <div className="rating"></div>
-                    </div>
-
-                    
-
-                    <p className="offer mb-0"></p>
-                </div>
-                </div>
-
-                <div className="dummy-card">
-                <div className="card-img">
-                
-                    <img className="dummy-img" width="100%"  alt="" />
-                </div>
-                <div className="card-body">
-                    <h1 className="food-title mb-0"></h1>
-                    <p className="food-cui mt-0"></p>
-
-                    <div className="desc">
-                        <div className="rating"></div>
-                    </div>
-
-                    
-
-                    <p className="offer mb-0"></p>
-                </div>
-                </div>
-
-                <div className="dummy-card">
-                <div className="card-img">
-                
-                    <img className="dummy-img" width="100%"  alt="" />
-                </div>
-                <div className="card-body">
-                    <h1 className="food-title mb-0"></h1>
-                    <p className="food-cui mt-0"></p>
-
-                    <div className="desc">
-                        <div className="rating"></div>
-                    </div>
-
-                    
-
-                    <p className="offer mb-0"></p>
-                </div>
-                </div>
-
-                <div className="dummy-card">
-                <div className="card-img">
-                
-                    <img className="dummy-img" width="100%"  alt="" />
-                </div>
-                <div className="card-body">
-                    <h1 className="food-title mb-0"></h1>
-                    <p className="food-cui mt-0"></p>
-
-                    <div className="desc">
-                        <div className="rating"></div>
-                    </div>
-
-                    
-
-                    <p className="offer mb-0"></p>
-                </div>
-                </div>
-
-
-                <div className="dummy-card">
-                <div className="card-img">
-                
-                    <img className="dummy-img" width="100%"  alt="" />
-                </div>
-                <div className="card-body">
-                    <h1 className="food-title mb-0"></h1>
-                    <p className="food-cui mt-0"></p>
-
-                    <div className="desc">
-                        <div className="rating"></div>
-                    </div>
-
-                    
-
-                    <p className="offer mb-0"></p>
-                </div>
-                </div>
-
-                <div className="dummy-card">
-                <div className="card-img">
-                
-                    <img className="dummy-img" width="100%"  alt="" />
-                </div>
-                <div className="card-body">
-                    <h1 className="food-title mb-0"></h1>
-                    <p className="food-cui mt-0"></p>
-
-                    <div className="desc">
-                        <div className="rating"></div>
-                    </div>
-
-                    
-
-                    <p className="offer mb-0"></p>
-                </div>
-                </div>
-
-                <div className="dummy-card">
-                <div className="card-img">
-                
-                    <img className="dummy-img" width="100%"  alt="" />
-                </div>
-                <div className="card-body">
-                    <h1 className="food-title mb-0"></h1>
-                    <p className="food-cui mt-0"></p>
-
-                    <div className="desc">
-                        <div className="rating"></div>
-                    </div>
-
-                    
-
-                    <p className="offer mb-0"></p>
-                </div>
-                </div>
-
-                <div className="dummy-card">
-                <div className="card-img">
-                
-                    <img className="dummy-img" width="100%"  alt="" />
-                </div>
-                <div className="card-body">
-                    <h1 className="food-title mb-0"></h1>
-                    <p className="food-cui mt-0"></p>
-
-                    <div className="desc">
-                        <div className="rating"></div>
-                    </div>
-
-                    
-
-                    <p className="offer mb-0"></p>
-                </div>
-                </div>
-
-
-                <div className="dummy-card">
-                <div className="card-img">
-                
-                    <img className="dummy-img" width="100%"  alt="" />
-                </div>
-                <div className="card-body">
-                    <h1 className="food-title mb-0"></h1>
-                    <p className="food-cui mt-0"></p>
-
-                    <div className="desc">
-                        <div className="rating"></div>
-                    </div>
-
-                    
-
-                    <p className="offer mb-0"></p>
-                </div>
-                </div>
-
-                <div className="dummy-card">
-                <div className="card-img">
-                
-                    <img className="dummy-img" width="100%"  alt="" />
-                </div>
-                <div className="card-body">
-                    <h1 className="dummy-title mb-0"></h1>
-                    <p className="dummy-p mt-0"></p>
-
-                    <div className="desc">
-                        <div className="dummy-rating"></div>
-                    </div>
-
-                    <hr />
-
-                    <p className="dummy-offer mb-0"></p>
-                </div>
-                </div>
-                </div>
+            </div>
+            <div className="d-flex">
+            {
+                    new Array(1, 2, 3, 4, 5, 6).map((x) => {
+                        return <ShimmerModal />
+                })
+            }
+           
+
+            </div>
             
+
+
+
+
+
         </>
     )
 }
+
+function ShimmerModal() {
+    return (
+        <>
+                        <div className="dummy-card">
+                            <div className="dummy-img">
+                                <img src="" alt="" />
+                            </div>
+                        </div>
+                    
+        </>
+    )
+}
+
 
 export default Shimmer;

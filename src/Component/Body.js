@@ -26,49 +26,39 @@ let Body = () => {
         
         
     }
-    let onSearchHandler = () => {
-        filterData(allRestaurantlist, text);
-    }
+    // let onSearchHandler = () => {
+    //     filterData(allRestaurantlist, text);
+    // }
 
     useEffect(() => {
         fetchTheData();
+        console.log("api calling")
     }, [])
 
-    // if (filteredRestaurantlist.length === 0) {
-    //     return (
-    //         <>
+    useEffect(() => {
+        filterData(allRestaurantlist, text);
+    }, [text])
+
+    if (filteredRestaurantlist.length === 0) {
+        return (
+            <>
             
-    //         <div className="form-wrapper">
-
-    //                 <input type="text" onChange={getTextHandler = (e) => {
-    //                     settext(e.target.value)
-    //                     }} value={text}  className="input-control" placeholder="Once you try it, you will love it." />
-    //                     <button className="btn-search" onClick={onSearchHandler}>Search</button>
-                    
-                    
                 
-    //         </div>
-    //         <div className="msg-no">
-
-    //                 {/* <h1 class="">"No match found"</h1> */}
-    //             </div>
-    //             </>
-    //         )
-    // }
+                <Shimmer />
+               </>
+            )
+    }
     
     // conditional rendering
-    return filteredRestaurantlist.length === 0 ? (
-        <Shimmer />
-    ) : (
+    return  (
         <> 
             <div>
 
             <div className="form-wrapper">
                     <input type="text" onChange={getTextHandler = (e) => {
                         settext(e.target.value)
-                        // setfilteredRestaurantlist(allRestaurantlist)
                         }} value={text}  className="input-control" placeholder="Once you try it, you will love it." />
-                        <button className="btn-search" onClick={onSearchHandler}>Search</button>
+                        {/* <button className="btn-search" onClick={onSearchHandler}>Search</button> */}
                         {/* <i class="bi bi-search"></i> */}
                     </div>
             </div>
