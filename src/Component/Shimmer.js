@@ -3,6 +3,16 @@ let Shimmer = () => {
     let a = []
     return (
         <>
+            
+            <div className="car-flex d-none">
+                <img className="dummy-c-img"  />
+
+                <img className="dummy-c-img"  />
+                <img className="dummy-c-img"  />
+
+                <img className="dummy-c-img" />
+            </div>
+            
             <div>
                 <div className="form-wrapper">
                     <input type="text"

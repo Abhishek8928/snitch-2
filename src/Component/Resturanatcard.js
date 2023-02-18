@@ -13,11 +13,11 @@ let Resturanatcard = ({ restList }) => {
                 </div>
                 <div className="card-body">
                     <h1 className="food-title mb-0">{name}</h1>
-                    <p className="food-cui mt-0">{cuisines.join(",")}</p>
+                    <p  className="food-cui mt-0">{cuisines.join(",")}</p>
 
                     
 
-                    <hr />
+                    
 
                     <p className="offer mb-0">{"⭐" + aggregatedDiscountInfoV2.header + "|" + aggregatedDiscountInfoV2.shortDescriptionList[0].meta}</p>
                 </div>

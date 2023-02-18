@@ -1,6 +1,7 @@
 import Resturanatcard from "./Resturanatcard";
 import Shimmer from './Shimmer.js'
-import { useState,useEffect } from 'react';
+import { useState, useEffect } from 'react';
+import {Link} from 'react-router-dom'
 
 let Body = () => {
 
@@ -25,8 +26,6 @@ let Body = () => {
             return (x.data.name.toLowerCase().includes(searchText.toLowerCase()));
         })
         setfilteredRestaurantlist(filterlist)
-        
-        
         
     }
     let onSearchHandler = () => {
@@ -57,6 +56,8 @@ let Body = () => {
     // conditional rendering
     return  (
         <> 
+            
+            <Carousel />
             <div>
 
             <div className="form-wrapper">
@@ -67,8 +68,8 @@ let Body = () => {
             </div>
             <div className="d-flex">
                 {filteredRestaurantlist.map((data, index) => {
-
-                    return  <Resturanatcard key={index} restList={data} />
+                    
+                    return <Link to={"/restaurant/" + data.data.id} ><Resturanatcard key={index} restList={data} /></Link> 
                 })
                 }
                 
@@ -79,4 +80,19 @@ let Body = () => {
     )
 }
 
+
+let Carousel = () => {
+    return (
+        <>
+            <div className="car-flex d-none">
+                <img className="c-img" src="https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_520,h_520/rng/md/carousel/production/pneknawbadtvceqzwiep" alt="" />
+
+                <img className="c-img" src="https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_520,h_520/rng/md/carousel/production/jcjcvebiczqe5jr2vijo" alt="" />
+                <img className="c-img" src="https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_520,h_520/rng/md/carousel/production/zpkkdkmvlj5cuvqbc50t" alt="" />
+
+                <img className="c-img" src="https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_520,h_520/rng/md/carousel/production/s5ug2key6e2sptaxku5v" alt="" />
+            </div>
+        </>
+    )
+} 
 export default Body;

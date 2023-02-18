@@ -1,9 +1,6 @@
 import { useState } from "react"
+import {Link} from 'react-router-dom'
 
-
-const User = () => {
-    return true;
-}
 
 let Header = () => {
     
@@ -16,7 +13,12 @@ let Header = () => {
 
                     <div>
                     
-                    
+                    <ul className="nav-links">
+                        <li className="nav-item"> <Link  to="/">Home</Link> </li>
+                        {/* <li className="nav-item">Food</li> */}
+                        <li className="nav-item"><Link to="/about">About</Link></li>
+                        <li className="nav-item"><Link to="/contact">Contact</Link></li>
+                    </ul>
                         
 
                         
@@ -28,24 +30,9 @@ let Header = () => {
                 </nav>
             </header>
 
-            <Carousel />
 
         </>
 
     )
 }
-let Carousel = () => {
-    return (
-        <>
-            <div className="car-flex d-none">
-                <img className="c-img" src="https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_520,h_520/rng/md/carousel/production/pneknawbadtvceqzwiep" alt="" />
-
-                <img className="c-img" src="https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_520,h_520/rng/md/carousel/production/jcjcvebiczqe5jr2vijo" alt="" />
-                <img className="c-img" src="https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_520,h_520/rng/md/carousel/production/zpkkdkmvlj5cuvqbc50t" alt="" />
-
-                <img className="c-img" src="https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_520,h_520/rng/md/carousel/production/s5ug2key6e2sptaxku5v" alt="" />
-            </div>
-        </>
-    )
-} 
 export default Header;

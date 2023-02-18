@@ -96,3 +96,24 @@ the functional component should be always in pascal case the first letter should
 one tag is called => jsx element
 
 an expression => conatins of group of jsx element
+
+for routing we have install react-router-dom
+
+
+we using createBrowserRouter function in that we have pass array of obj
+
+
+it that obj path and element which we wanted to load on that path
+
+we needed RouterProvider to specied Router to it
+
+what we have passed to render it will render the thing we have passed ReactProvider with the routes it will automatic loads the pages according to path
+
+ReactProvider needed a configuuration that we using the help of createBrowserRouter function
+
+on specific path what we have to load we can give to element
+on specific path if there is an errot we can give to errorElemnt
+
+
+on react-router-dom we have hook that is knows as useRouterError which gives complete details about of error 
+on routing time

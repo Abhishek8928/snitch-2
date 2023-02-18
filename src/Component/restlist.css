@@ -1,0 +1,265 @@
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css");
+
+.col-b{
+    background-color: #fff !important;
+}
+
+.restaurant-info{
+    background-color: #010001;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    padding:30px 10% 40px   10%;
+    display: flex;
+    
+}
+
+.pos-re{
+    position: relative;
+    padding-bottom: 20px;
+}
+.card-remove{
+    display: flex;
+    flex-direction: row !important;
+    justify-content: center;
+    gap:2rem;
+    margin-top: -20px;
+
+}
+
+.wrapper-it{
+    display: flex;
+    gap:4rem;
+    align-items: center;
+}
+
+.some-content div{
+    padding-right:30px;
+    border-right: 1px solid #464545;
+}
+.img-resize{
+    width:280px;
+}
+.second-container{
+    color:white;
+    text-align: start;
+}
+.third-container{
+    
+    width:250px;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    color: rgb(255, 255, 255);
+    padding:20px;
+}
+.info-flex{
+    display: flex;
+    gap:2rem;
+}
+.food-name{
+    color:#fefffe;
+    font-size: 3rem;
+    padding-bottom: 10px;
+}
+.address {
+    padding-top:10px;
+}
+
+.c-light{
+    color:#a6a7a6;
+}
+.d-light{
+    color:#565656;
+}
+.c-whi{
+    color:#fff;
+}
+.fs-1{
+    font-size: 1.2rem;
+}
+.fs-2{
+    font-size: 1.6rem;
+}
+
+.fs-4{
+    font-size: 4rem;
+}
+.fs-5{
+    font-size: 5rem;
+}
+.info-flex div p{
+    font-weight: bold;
+}
+.info-flex div p+p{
+    padding-top:10px;
+    font-weight: 600;
+}
+.input-control-list{
+    box-shadow: 0 3px 15px 0 rgb(40 44 63 / 10%);
+    border: 1px solid rgba(0,0,0,.04);
+    padding:1.4rem 1rem;
+    border-radius: 4px;
+    width:20%;
+}
+.input-control-list:focus{
+    box-shadow: 0 3px 15px 0 rgb(40 44 63 / 10%);
+    border: 1px solid rgba(0,0,0,.04);
+    outline: none;
+
+}
+.favourite{
+    box-shadow: 0 3px 15px 0 rgb(40 44 63 / 10%);
+    border: 1px solid rgba(0,0,0,.04);
+    background-color: #fff;
+    padding:1rem 2rem;
+
+    border-radius: 4px;
+}
+.bg-img{
+    background-color: #fff !important;
+}
+.checkbox{
+    display: flex;
+    align-items: center;
+    gap:0.6rem;
+}
+.conatiner{
+    display:flex;
+    justify-content: space-between;
+    box-sizing: border-box;
+    padding:40px 14%;
+    
+}
+.first-container-food{
+    width:70%;
+    box-sizing: border-box;
+    
+}
+.second-container-cart{
+    width:20%;
+    
+}
+.food-cart{
+    width: 300px;
+    
+}
+
+.food-card{
+    padding:20px 0px;
+    width: 100%;
+}
+.cart-title{
+    
+    font-size: 3rem;
+    color: #7e808c;
+    letter-spacing: -.3px;
+}
+.cart-desc{
+    color: #93959f;
+    margin-top: 15px;
+    font-size: 16px;
+    font-weight: 300;
+}
+.veg{
+    background-color: green;
+    width:10px;
+    height: 10px;
+    border-radius: 50%;
+}
+.hide-img{
+    display: none;
+}
+.non-veg{
+    background-color: red;
+    width:10px;
+    height: 10px;
+    border-radius: 50%;
+}
+.food-card{
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 0.6 solid #ccc;
+    
+}
+.list-img{
+    width:180px;
+}
+.rounded{
+    border-radius: 8px;
+}
+.food-desc{
+    font-size: 1.4rem;
+}
+.food-price{
+    padding:0.6rem 0px;
+    display: block;
+}
+.food-1{
+    width:500px;
+}
+
+
+.dummy-hero-img{
+    width:280px;
+    background-color: #fff !important;
+    height:200px;
+}
+.dummy-food-name,.dummy-address{
+    height:35px;
+    width:300px;
+    background-color:#fff;
+    margin-bottom: 20px;
+}
+
+.dummy-third-container{
+    width:300px;
+    height:100px;
+    background-color: #fff;
+}
+
+.dummy-post-re{
+    
+        position: relative;
+        padding: 20px 20px;
+    
+}
+.dummy-food-card{
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    width:700px;
+    height:180px;
+    background-color: #ccc;
+    margin: 20px 0px;
+
+}
+.dummy-food-2{
+    width:160px;
+    height:120px;
+    background-color: #fff !important;
+    margin-right: 60px;
+    border-radius: 8px;
+}
+.dummy-second-container-cart{
+    width:15%;
+    height:300px;
+    background-color: #ccc;
+    margin-top: 40px;
+    padding:10px;
+}
+.food-2{
+    position: relative;
+    padding:20px 20px;
+    width:200px;
+}
+.btn-Add{
+    box-shadow: 0 3px 15px 0 rgb(40 44 63 / 10%);
+    border: 1px solid rgba(0,0,0,.04);
+    background-color: #fff;
+    color:green;
+    padding:1.2rem 4rem;
+    position: absolute;
+    bottom:0;
+    margin:0px 32px;
+
+}
