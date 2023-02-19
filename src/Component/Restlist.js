@@ -83,7 +83,7 @@ function Restlist() {
                 </div>
                 </div>
 
-            <div className='third-container'>
+            <div className='third-container d-third-none'>
                     <p className="offer- c-whi fs-2 mb-0 mt-0">50% off up to ₹100 | Use code WELCOME50</p>
                     <p className='c-whi fs-2 mb-0'>FREE DELIVERY</p>
             </div>
@@ -127,7 +127,7 @@ function Restlist() {
                 <div className="second-container-cart">
                     <h1 className='cart-title'>Cart Empty</h1>
 
-                    <img className='food-cart' src="https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_480/Cart_empty_-_menu_2x_ejjkf2" alt="" />
+                    <img width="100%" className='food-cart' src="https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_480/Cart_empty_-_menu_2x_ejjkf2" alt="" />
                     <p className="cart-desc">Good food is always cooking! Go ahead, order some yummy items from the menu.</p>
                 </div>
             </div>
@@ -142,7 +142,9 @@ function Restlist() {
 function Fooditem(props) {
     console.log(props.data)
     console.log(props?.data?.cloudinaryImageId === null)
-    let [count,setCount] = useState("Add")
+    let [count, setCount] = useState(true)
+    
+    let [number,setNumber] = useState(1)
     return <>
         <div className="food-card">
             <div className="food-1">
@@ -159,12 +161,45 @@ function Fooditem(props) {
             </div>
             <div className="food-2">
                 <img className={props.data.cloudinaryImageId ? "list-img rounded" : "hide-img"} src={imageUrl + props.data.cloudinaryImageId} alt="" />
-                <div className='btn-flex'>
+                
 
-                    <button className="btn-Add">{count}</button>
+                <div className="abs">
+
+                    {count ?(<div className='abs'>
+                        <button className="btn-Add m-xl" onClick={() => {
+                        setCount(false)
+                            }}>Add</button>
+                    </div>)        :
+                        (
+                            <div className='abs'>
+                                
+                                <button className="btn-Add">
+                                <div className='d-flex-btn'>
+                                        <button className='small-btn' onClick={() => {
+                                            number === 0 ? setCount(true) : (setNumber(number--))
+                            }} ><i class="fs-1 bi bi-dash-lg"></i></button>
+                            
+                            <small className='count'>{number}</small>
+
+                                        <button className='small-btn' onClick={() => {
+                                            setNumber(number++)
+                            }}><i class="fs-1 bi bi-plus-lg"></i></button>
+                            
+                            </div>
+                            
+                            
+                                </button>
+                                    </div>
+                            
+
+                        )
+                        
+                    }
+                    </div>
+                    
                 </div>
             </div>
-        </div>
+        
     </>
 }
 export default Restlist;

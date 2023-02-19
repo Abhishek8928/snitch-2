@@ -260,6 +260,129 @@
     padding:1.2rem 4rem;
     position: absolute;
     bottom:0;
-    margin:0px 32px;
+    margin:0px 20px;
 
+}
+.m-xl{
+    margin:0px 30px;
+}
+.abs{
+    box-shadow: 0 3px 15px 0 rgb(40 44 63 / 10%);
+    border: 1px solid rgba(0,0,0,.04);
+    background-color: #fff;
+    position: absolute;
+    bottom:0;
+}
+.small-btn{
+    border:none;
+    background-color: #fff;
+    display: block;
+}
+.count{
+    margin:0px;
+}
+.d-flex-btn{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+@media (max-width:1250px) {
+    .restaurant-info{
+        background-color: #010001;
+        
+        padding:30px 2% 40px 2%;
+    }
+    .conatiner{
+        justify-content: center;
+        box-sizing: border-box;
+        gap:4rem;
+        padding:40px 2% !important;
+    }
+    .first-container-food{
+        width:60%;
+        box-sizing: border-box;
+        
+    }
+    .second-container-cart{
+        width:18%;
+        
+    }
+    .food-cart{
+        width: 250px;
+        
+    }
+}
+
+@media (max-width:1024px) {
+    html{
+        font-size: 10px;
+    }
+    .d-third-none{
+        display: none;
+    }
+    .restaurant-info{
+        background-color: #010001;
+        padding:30px 2% 40px 2%;
+    }
+    .wrapper-it{
+        display: flex;
+        gap:2rem;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .first-container-food{
+        width:50%;
+        box-sizing: border-box;
+        
+    }
+    .second-container-cart{
+        width:20%;
+        
+    }
+    .conatiner{
+        justify-content: space-center;
+        gap:2rem;
+        box-sizing: border-box;
+        padding:30px 2% !important;
+    }
+    .food-cart{
+        width: 240px;
+    }
+    .food-1{
+        width:600px;
+    }
+    .food-2{
+        position: relative;
+        padding:20px 20px;
+        width:170px;
+    }
+    .fs-2{
+        font-size: 1.4rem;
+    }
+}
+
+@media (max-width:756px) {
+    .food-2{
+        position: relative;
+        padding:20px 20px;
+        width:150px;
+    }
+    .first-container-food{
+        width:90%;
+        box-sizing: border-box;
+        
+    }
+    .second-container-cart{
+        display: none;
+        
+    }
+    .input-control-list{
+        box-shadow: 0 3px 15px 0 rgb(40 44 63 / 10%);
+        border: 1px solid rgba(0,0,0,.04);
+        padding:1.4rem 1rem;
+        border-radius: 4px;
+        width:30%;
+    }
 }

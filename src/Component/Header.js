@@ -3,7 +3,7 @@ import {Link} from 'react-router-dom'
 
 
 let Header = () => {
-    
+    const [isValid , setIsvalid] = useState(false)
     return (
         <>
 
@@ -18,12 +18,21 @@ let Header = () => {
                         {/* <li className="nav-item">Food</li> */}
                         <li className="nav-item"><Link to="/about">About</Link></li>
                         <li className="nav-item"><Link to="/contact">Contact</Link></li>
-                    </ul>
-                        
-
-                        
-                        
+                        </ul>
                     </div>
+
+                    <div>
+                        {
+                            isValid ? <button onClick={() => {
+                                setIsvalid(false)
+                            }} className="btn-login">Logout</button> :
+                                
+                            <button onClick={() => {
+                                setIsvalid(true)
+                            }}   className="btn-login">Login</button>
+                             
+                       }
+                        </div>
                     
 
 
