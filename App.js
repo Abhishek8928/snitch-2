@@ -33,14 +33,16 @@ let appRoutes = createBrowserRouter([
         children: [
             {
                 path: "/about",
-                element:<Undermaintainces/>
+                element:<Undermaintainces/>,
+                errorElement: <Error />
             },
             {
                 path: "/Contact",
-                element:<Undermaintainces/>
+                element: <Undermaintainces />,
+                errorElement: <Error />
             }, {
                 path: "/",
-        element: <Body />,
+           element: <Body />,
         errorElement: <Error />
             },
             {
