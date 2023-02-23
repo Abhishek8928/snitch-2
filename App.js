@@ -38,8 +38,7 @@ let appRoutes = createBrowserRouter([
         children: [
             {
                 path: "/about",
-                element:<Suspense fallback={<Shimmerlist />}> <About/> </Suspense>,
-                errorElement: <Error />
+                element:<Suspense fallback={<Shimmerlist />}> <About/> </Suspense>
             },
             {
                 path: "/Contact",

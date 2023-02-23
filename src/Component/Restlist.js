@@ -3,7 +3,8 @@ import Shimmerlist from './Shimmerlist';
 import Shimmer from '../Component/Shimmer'
 import { useParams } from "react-router";
 import { useEffect, useState } from 'react';
-import { imageUrl } from "../../Constant"
+import { imageUrl } from "../../Constant";
+import Vegsearch from '../../Helper/Vegsearch';
 function Restlist() {
     const { id } = useParams();
 
@@ -23,14 +24,32 @@ function Restlist() {
         setresfilterItem(result)
         
     }
-    useEffect(() => {
-        Search(resItem,txt)
-    },[txt])
     function getText(e) {
         setTxt(e.target.value);
-        console.log(txt)
+        if (txt === '')
+        {
+            // setresfilterItem(resItem)
+        }
+        else {
+            Search(resItem,txt)
+        }
     }
+
     
+    function onclicked(e) {
+        if (e.target.checked) {
+            let dataGet = Vegsearch(resItem);
+            setresfilterItem(dataGet)
+            console.table(dataGet)
+        }  
+        else {
+            onlynonveg()
+        }
+    } 
+    
+    function onlynonveg() {
+        setresfilterItem(resItem)
+    }
     async function getResaturantinfo() {
         const data = await fetch("https://www.swiggy.com/dapi/menu/v4/full?lat=19.0300092&lng=73.09548509999999&menuId=" + id)
         let convertToJson = await data.json();
@@ -96,7 +115,7 @@ function Restlist() {
                         
             
                 <div className="checkbox favourite">
-                    <input type="checkbox" name="" id="" />
+                    <input onClick={onclicked} type="checkbox" name="" id="" />
                     <span className='fs-2'>Veg Only</span>
                     </div>
                     <div className='favourite checkbox'>
@@ -140,8 +159,6 @@ function Restlist() {
 
 
 function Fooditem(props) {
-    console.log(props.data)
-    console.log(props?.data?.cloudinaryImageId === null)
     let [count, setCount] = useState(true)
     
     let [number,setNumber] = useState(1)

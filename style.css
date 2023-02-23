@@ -199,7 +199,7 @@ a{
 }
 .footer-wrapper{
     
-    padding: 30px 4%;
+    padding: 12px 4%;
     background-color:#fff;
     display: flex;
     align-items: center;
@@ -285,6 +285,22 @@ a{
     color:white;
     padding:1.2rem 2rem;
     border-radius: 4px;
+  }
+  .no-conn{
+    height:90vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+  .msg{
+    color:rgb(39,39,41);
+    font-size: 6rem;
+  }
+  .msg-desc{
+    font-size:2.4rem;
+    color:#606060;
+    
   }
 @media (max-width:1000px) {
     

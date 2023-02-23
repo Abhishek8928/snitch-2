@@ -3,6 +3,7 @@ import Shimmer from './Shimmer.js'
 import { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom'
 import useOnline from "./useOnline";
+import no from '../../Helper/no.gif'
 let Body = () => {
 
     const [text, settext] = useState('');
@@ -36,9 +37,10 @@ let Body = () => {
         setfilteredRestaurantlist(filterlist)
         
     }
-    // let onSearchHandler = () => {
-    //     filterData(allRestaurantlist, text);
-    // }
+
+    let result = useOnline();
+
+    
 
     useEffect(() => {
         fetchTheData();
@@ -48,6 +50,17 @@ let Body = () => {
         filterData(allRestaurantlist, text);
     }, [])
 
+    if (result === false) {
+        return (<div className="no-conn">
+
+            <div className="inner-msg">
+                <img  width="50%" src={no} alt="" />
+                <h1 className="msg mt-0 mb-0">Uh - OH!</h1>
+                <p className="msg-desc mt-0 mb-0">slow or no internet connection</p>
+                <p className="msg-desc mt-0">please check your internent connection and try again</p>
+            </div>
+          </div>)
+    }
     
     return (allRestaurantlist?.length === 0) ? (
         <Shimmer />
@@ -60,10 +73,7 @@ let Body = () => {
 
             <div className="form-wrapper">
                     <input type="text" onChange={getTextHandler}  value={text}  className="input-control" placeholder="Once you try it, you will love it." />
-                        {/* <button className="btn-search" onClick={(e) => {
-                            
-                        }}>Search</button> */}
-                        {/* <i class="bi bi-search"></i> */}
+                        <button className="btn-search" >Search</button>
                     </div>
             </div>
             <div className="d-flex">

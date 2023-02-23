@@ -1,10 +1,6 @@
-import {useRouteError} from 'react-router-dom'
+
 function Error() {
 
-    let err = useRouteError();
-
-    let {status,statusText} = err;
-    console.log(err)
     return (
         <>
             <div className='error-flex'>
