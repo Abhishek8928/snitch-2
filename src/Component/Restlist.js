@@ -3,7 +3,7 @@ import Shimmerlist from './Shimmerlist';
 import Shimmer from '../Component/Shimmer'
 import { useParams } from "react-router";
 import { useEffect, useState } from 'react';
-import {imageUrl} from "../../Constant"
+import { imageUrl } from "../../Constant"
 function Restlist() {
     const { id } = useParams();
 
@@ -39,7 +39,7 @@ function Restlist() {
         setresfilterItem(Object.values(convertToJson?.data?.menu?.items))
     }
     let rsConverter = res?.data?.costForTwo / 100;
-    
+    if (!resItem) return null
     return (res.length == 0) ? (<Shimmerlist />) : (<>
         
 <div className='col-b'>

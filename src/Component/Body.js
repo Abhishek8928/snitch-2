@@ -1,8 +1,8 @@
 import Resturanatcard from "./Resturanatcard";
 import Shimmer from './Shimmer.js'
 import { useState, useEffect } from 'react';
-import {Link} from 'react-router-dom'
-
+import { Link } from 'react-router-dom'
+import useOnline from "./useOnline";
 let Body = () => {
 
     const [text, settext] = useState('');
@@ -20,6 +20,14 @@ let Body = () => {
 
     function getTextHandler(e) {
         settext(e.target.value)
+
+        if (text === '')
+        {
+            setfilteredRestaurantlist(allRestaurantlist)
+        }
+        else {
+            filterData(allRestaurantlist, e.target.value)
+        }
     } 
     function filterData(allRestaurantlist, searchText) {
         let filterlist = allRestaurantlist.filter((x) => {
@@ -28,33 +36,23 @@ let Body = () => {
         setfilteredRestaurantlist(filterlist)
         
     }
-    let onSearchHandler = () => {
-        filterData(allRestaurantlist, text);
-    }
+    // let onSearchHandler = () => {
+    //     filterData(allRestaurantlist, text);
+    // }
 
     useEffect(() => {
         fetchTheData();
-        console.log("api calling")
     }, [])
 
     useEffect(() => {
         filterData(allRestaurantlist, text);
-    }, [text])
-
-    if (filteredRestaurantlist.length === 0) {
-        return (
-            <>
-            
-                
-                <Shimmer />
-               </>
-            )
-    }
-
+    }, [])
 
     
-    // conditional rendering
-    return  (
+    return (allRestaurantlist?.length === 0) ? (
+        <Shimmer />
+    ) : 
+    (
         <> 
             
             <Carousel />
@@ -62,12 +60,14 @@ let Body = () => {
 
             <div className="form-wrapper">
                     <input type="text" onChange={getTextHandler}  value={text}  className="input-control" placeholder="Once you try it, you will love it." />
-                        <button className="btn-search" onClick={onSearchHandler}>Search</button>
+                        {/* <button className="btn-search" onClick={(e) => {
+                            
+                        }}>Search</button> */}
                         {/* <i class="bi bi-search"></i> */}
                     </div>
             </div>
             <div className="d-flex">
-                {filteredRestaurantlist.map((data, index) => {
+                {filteredRestaurantlist?.map((data, index) => {
                     
                     return <Link to={"/restaurant/" + data.data.id} ><Resturanatcard key={index} restList={data} /></Link> 
                 })
