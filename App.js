@@ -4,6 +4,7 @@ import ReactDOM from "react-dom/client";
 import Header from "./src/Component/Header.js";
 import Body from "./src/Component/Body.js";
 import Footer from "./src/Component/Footer.js";
+import Instamart from './src/Component/Instamart'
 // import About from "./src/Component/About.js";
 import Error from "./src/Component/Error.js";
 import Contact from "./src/Component/Contact.js";
@@ -52,6 +53,10 @@ let appRoutes = createBrowserRouter([
             {
                 path: "/restaurant/:id",
                 element: <Restlist />,
+            },
+            {
+                path: "/Instamart",
+                element: <Instamart />,
             }
         ]
     }

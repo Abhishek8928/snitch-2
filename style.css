@@ -9,7 +9,7 @@ html{
     font-size: 10px;
 }
 body{
-    background: #e8e8e8 !important;
+    background: #fff;
     /* background-color: #161a28; */
 }
 .form-wrapper{
@@ -85,9 +85,10 @@ nav{
     width:240px;
     padding:20px;
     margin: 10px 0px;
-    background-color: #fff;
+    background-color: #f8f8f8;
     text-decoration: none;
 }
+
 .dummy-card{
     width:240px;
     height:280px;
@@ -197,22 +198,16 @@ a{
     background-color: #161a28;
     gap:4rem;
 }
-.footer-wrapper{
-    
-    padding: 12px 4%;
-    background-color:#fff;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    flex-wrap: wrap;
-}
-.copy{
-    font-size: 2rem;
-}
+
+
 .social-handle{
     display:flex;
-    gap:1rem;
+    gap:2rem;
     list-style-type: none;
+    margin:0px;
+    padding:0px;
+    padding-top: 10px;
+
 }
 .social-handle li i{
     color:rgb(20,16,11);
@@ -222,6 +217,31 @@ a{
 .social-handle li i:hover{
     opacity:1;
 }
+.developer-name{
+    color:rgb(156 163 175);
+    font-size: 1.8rem;
+}
+.foote-first{
+}
+.footer-wrapper{
+    background-color: #fff;
+   padding:60px 4%;
+   margin:0px 20px;
+   display: flex;
+   justify-content:space-between;
+   
+}
+
+.footer-link{
+    list-style-type: none;
+    padding:0px;
+    margin:0px;
+}
+.footer-link li{
+    padding:6px 0px;
+    font-size: 1.6rem;
+}
+
 .try-one{
     position: absolute;
     background-color:rgb(43, 146, 43) !important;
@@ -231,6 +251,19 @@ a{
     font-size: 1.2rem;
 }
 
+li button{
+    display:flex;
+    width:160px;
+    box-sizing: content-box;
+    justify-content: center;
+    align-items: center;
+    gap:0.6rem;
+    padding:2rem 2rem;
+    border:none;
+    background-color: #fff;
+    border:1px solid #ccc;
+    border-radius: 4px;
+}
   .msg-no{
     display:flex;
     justify-content: center;
@@ -301,6 +334,19 @@ a{
     font-size:2.4rem;
     color:#606060;
     
+  }
+  .no-res-msg {
+    color:rgb(39,39,41);
+    font-size: 4.6rem;
+  }
+  .no-res-desc{
+    font-size: 1.6rem;
+  }
+  .no-flex{
+    display: flex;
+    justify-content: center;
+    padding:20px 0px 60px 0px;
+    text-align: center;
   }
 @media (max-width:1000px) {
     

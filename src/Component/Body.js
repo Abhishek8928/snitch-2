@@ -61,11 +61,31 @@ let Body = () => {
             </div>
           </div>)
     }
-    
-    return (allRestaurantlist?.length === 0) ? (
-        <Shimmer />
-    ) : 
-    (
+    if(allRestaurantlist?.length === 0) return  <Shimmer />
+    if (filteredRestaurantlist.length === 0) {
+        return (
+            <>
+                <Carousel />
+            <div>
+
+            <div className="form-wrapper">
+                    <input type="text" onChange={getTextHandler}  value={text}  className="input-control" placeholder="Once you try it, you will love it." />
+                        <button className="btn-search" >Search</button>
+                    </div>
+                </div>
+                <div className="no-flex">
+                    <div>
+                    <h1 className="no-res-msg mb-0">no restaurant is avaiable</h1>
+
+<p className="no-res-desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. lorem5</p>
+                    </div>
+                
+                </div>
+                
+            </>
+        )
+    }
+    return (
         <> 
             
             <Carousel />

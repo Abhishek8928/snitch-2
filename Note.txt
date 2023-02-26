@@ -117,3 +117,21 @@ on specific path if there is an errot we can give to errorElemnt
 
 on react-router-dom we have hook that is knows as useRouterError which gives complete details about of error 
 on routing time
+
+
+to add the tailwind css in the project
+
+first of all we have intsall tailwind css and postcss as the dev dependcies
+
+postcss is the tool to transform css with js plugin
+
+next do npx tailwindcss init :- it will cerate a tailwind.config file
+
+
+we have create a postcss.rc file on project root to enable the tailwind plugin
+
+
+in that file in contaent we have passed the file which will use the tailwind class
+
+after that create a css import base , utilies ,and component
+

@@ -58,8 +58,11 @@ function Restlist() {
         setresfilterItem(Object.values(convertToJson?.data?.menu?.items))
     }
     let rsConverter = res?.data?.costForTwo / 100;
-    if (!resItem) return null
-    return (res.length == 0) ? (<Shimmerlist />) : (<>
+    if (resItem.length == 0) {
+        return <Shimmerlist />
+    }
+    
+    return  (<>
         
 <div className='col-b'>
         <div className='pos-re'>
@@ -134,11 +137,22 @@ function Restlist() {
         <div className="list">
             
 
-            <div className="conatiner">
-                <div className="first-container-food">
+                <div className="conatiner">
                     {
-                        resfilterItem.map((x) => {
-                            return <Fooditem data={x} />
+                        
+                    }
+                <div className="first-container-food">
+                        {(resfilterItem.length === 0) ? <>
+                            <div className="no-flex">
+                    <div>
+                    <h1 className="no-res-msg mb-0">No food avaiable on desired name</h1>
+
+<p className="no-res-desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. lorem5</p>
+                    </div>
+                
+                </div></> :
+                        resfilterItem.map((x,index) => {
+                            return <Fooditem key={index} data={x} />
                         })
                     }
                 </div>
