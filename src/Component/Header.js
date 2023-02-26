@@ -9,7 +9,7 @@ let Header = () => {
 
             <header>
                 <nav class="col-whi show-shadow">
-                    <img width="140px " src="https://cdn.shopify.com/s/files/1/0420/7073/7058/files/blackoption_200x.png?v=1659016547" alt="" />
+                    <img width="100px " src="https://www.zeptonow.com/images/logo.svg" alt="" />
 
                     <div>
                     
