@@ -58,10 +58,10 @@ function Hero() {
                 <h1 className='hero-title'>Emergency supplies
 
                     delivered in minutes,
-                    from the house of Swiggy.</h1>
+                    from the house of  Zepto.</h1>
 
                 <p className='hero-desc'>Open 6 AM to late night everyday</p>
-                <button className="btn-swiggy">Try instamart on swiggy app</button>
+                <button className="btn-swiggy">Try instamart on Zepto app</button>
             </div>
             <div className='hero-second'>
 

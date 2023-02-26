@@ -65,18 +65,18 @@
     font-size: 2rem;
 }
 .btn-swiggy{
-    padding:2rem 6rem;
+    padding:1.6rem 4rem;
     
-    background-color: #8661C1;
+    background-color: #ff7151;
     color:#fff;
-    border: 1px solid #8661C1;
+    border: 1px solid #ff7151;
     font-size: 2rem;
     border-radius: 8px;
 }
 .btn-swiggy:hover{
     background-color: #fff;
-    border: 1px solid #8661C1;
-    color: #8661C1;
+    border: 1px solid #ff7151;
+    color: #ff7151;
     cursor: pointer;
     
 
